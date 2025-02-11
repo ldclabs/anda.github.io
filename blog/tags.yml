@@ -1,0 +1,19 @@
+icpanda:
+  label: ICPanda
+  permalink: /icpanda
+  description: ICPanda DAO
+
+tee:
+  label: TEE
+  permalink: /tee
+  description: Trusted Execution Environment
+
+anda:
+  label: Anda
+  permalink: /anda
+  description: Anda AI Agent framework
+
+aiagent:
+  label: AIAgent
+  permalink: /aiagent
+  description: AI Agent

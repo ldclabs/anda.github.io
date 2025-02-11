@@ -1,0 +1,13 @@
+.features {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 768px;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
