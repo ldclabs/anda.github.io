@@ -123,7 +123,7 @@ An interesting feature here is that with the support of ICP and TEE technologies
 
 In the technical documentation of the anda project, there is a sequence diagram showing the startup process of Anda in TEE, which we will not detail here.
 
-https://github.com/ldclabs/anda/blob/main/docs/architecture_cn.md
+https://github.com/ldclabs/anda/blob/main/docs/architecture.md
 
 ## The Development Roadmap of Anda
 

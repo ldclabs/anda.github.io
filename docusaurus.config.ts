@@ -67,7 +67,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/icpanda-dao.webp',
     navbar: {
       title: 'Anda Docs',
       logo: {
@@ -87,6 +87,10 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
