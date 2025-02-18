@@ -1,0 +1,8 @@
+{
+  "label": "Quick starts",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Guides you through developing a simple AI agent using the Anda framework in just over 100 lines of code, capable of interacting with the ICP blockchain."
+  }
+}

@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title} Documentations`}
-      description="🤖 A framework for AI agent development, designed to build a highly composable, autonomous, and perpetually memorizing network of AI agents.">
+      description="🤖 An AI agent framework built with Rust, featuring ICP blockchain integration and TEE support.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Anda',
-  tagline: '🤖 A framework for AI agent development, designed to build a highly composable, autonomous, and perpetually memorizing network of AI agents.',
+  tagline: '🤖 An AI agent framework built with Rust, featuring ICP blockchain integration and TEE support.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -79,7 +79,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Build',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
