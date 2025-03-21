@@ -64,22 +64,22 @@ DEEPSEEK_API_KEY=''
 
 This project supports xAI's grok-2 or OpenAI's o3-mini models, but not DeepSeek due to unstable Function Calling.
 
-Generate `ID_SECRET` and `ROOT_SECRET` using `anda_engine_cli`:
+Generate `ID_SECRET` and `ROOT_SECRET` using `anda_cli`:
 
 ```bash
-cargo build -p anda_engine_cli
-./target/debug/anda_engine_cli --help
-./target/debug/anda_engine_cli rand-bytes --help
+cargo build -p anda_cli
+./target/debug/anda_cli --help
+./target/debug/anda_cli rand-bytes --help
 ```
 
 Generate 32-byte `ID_SECRET`:
 ```bash
-./target/debug/anda_engine_cli rand-bytes --len 32
+./target/debug/anda_cli rand-bytes --len 32
 ```
 
 Generate 48-byte `ROOT_SECRET`:
 ```bash
-./target/debug/anda_engine_cli rand-bytes --len 48
+./target/debug/anda_cli rand-bytes --len 48
 ```
 
 ### 1.4 Running the AI Agent Service
@@ -94,11 +94,11 @@ This starts the AI agent service, listening on the default port `8042`.
 
 ### 1.5 Calling the Agent
 
-Use `anda_engine_cli` to call the AI agent service:
+Use `anda_cli` to call the AI agent service:
 
 ```bash
-./target/debug/anda_engine_cli agent-run --help
-./target/debug/anda_engine_cli agent-run -p 'Please check my PANDA balance'
+./target/debug/anda_cli agent-run --help
+./target/debug/anda_cli agent-run -p 'Please check my PANDA balance'
 ```
 
 The AI agent service can include multiple Anda engines, each with multiple agents and tools. The above command calls the default agent in the default Anda engine.
@@ -106,13 +106,13 @@ The AI agent service can include multiple Anda engines, each with multiple agent
 Use a different identity to call the AI agent service if you have `dfx` installed:
 
 ```bash
-./target/debug/anda_engine_cli agent-run -i ~/.config/dfx/identity/default/identity.pem -p 'Please transfer 0.1 PANDA tokens to me'
+./target/debug/anda_cli agent-run -i ~/.config/dfx/identity/default/identity.pem -p 'Please transfer 0.1 PANDA tokens to me'
 ```
 
 You can also directly call tools to query balances:
 
 ```bash
-./target/debug/anda_engine_cli tool-call -n icp_ledger_balance_of -a '{"account":"535yc-uxytb-gfk7h-tny7p-vjkoe-i4krp-3qmcl-uqfgr-cpgej-yqtjq-rqe","symbol":"PANDA"}'
+./target/debug/anda_cli tool-call -n icp_ledger_balance_of -a '{"account":"535yc-uxytb-gfk7h-tny7p-vjkoe-i4krp-3qmcl-uqfgr-cpgej-yqtjq-rqe","symbol":"PANDA"}'
 ```
 
 ## Code Analysis
